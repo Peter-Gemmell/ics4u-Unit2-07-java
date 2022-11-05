@@ -30,6 +30,14 @@ public class Truck extends Vehicle {
     }
 
     /**
+     * This is the status method.
+     */
+    public void status() {
+        super.status();
+        System.out.println(" → licensePlate: " + this.getLicensePlate());
+    }
+
+    /**
      * This returns the licensePlate.
      *
      * @return this returns the licensePlate.
@@ -58,15 +66,5 @@ public class Truck extends Vehicle {
         if (super.getSpeed() < 0) {
             super.setSpeed(0);
         }
-    }
-
-    /**
-     * This is the status method.
-     */
-    public void status() {
-        System.out.println(" → Speed: " + super.getSpeed());
-        System.out.println(" → MaxSpeed: " + super.getMaxSpeed());
-        System.out.println(" → Color: " + super.getColor());
-        System.out.println(" → licensePlate: " + this.getLicensePlate());
     }
 }

@@ -37,6 +37,14 @@ public class Bike extends Vehicle {
         this.cadence = this.cadence + appliedPower;
         super.setSpeed(this.cadence * 2);
     }
+ 
+    /**
+     * This is the status method.
+     */
+    public void status() {
+        super.status();
+        System.out.println(" → Cadence: " + this.cadence);
+    }
 
     /**
      * This is the cadence.
@@ -52,15 +60,5 @@ public class Bike extends Vehicle {
      */
     public void ringBell() {
         System.out.println("Ding ding!");
-    }
-
-    /**
-     * This is the status function.
-     */
-    public void status() {
-        System.out.println(" → Speed: " + super.getSpeed());
-        System.out.println(" → MaxSpeed: " + super.getMaxSpeed());
-        System.out.println(" → Color: " + super.getColor());
-        System.out.println(" → Cadence: " + this.getCadence());
     }
 }

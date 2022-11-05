@@ -42,6 +42,15 @@ public class Vehicle {
     }
 
     /**
+     * This is the status method.
+     */
+    public void status() {
+        System.out.println(" → Speed: " + this.speed);
+        System.out.println(" → Max Speed: " + this.maxSpeed);
+        System.out.println(" → Color: " + this.color);
+    }
+
+    /**
      * This returns the color.
      *
      * @return this returns the color.
